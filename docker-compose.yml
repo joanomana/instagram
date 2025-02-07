@@ -1,0 +1,12 @@
+services:
+  app:
+    image: node:latest
+    container_name: instagram
+    working_dir: /instagram
+    volumes:
+      - .:/instagram
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=development
+    command: ["sh", "-c", "rm -rf node_modules package-lock.json && npm install && npm run dev"]
