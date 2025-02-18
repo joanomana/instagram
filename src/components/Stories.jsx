@@ -2,13 +2,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
+import avatar1 from "../storage/img/avatar1.png";
+import avatar2 from "../storage/img/avatar2.png";
+import avatar3 from "../storage/img/avatar3.png";
+import avatar4 from "../storage/img/avatar4.png";
+import avatar5 from "../storage/img/avatar5.png";
 const stories = [
-  { id:1, name:"Ruffles", img:"./src/storage/img/avatar1.png"},
-  { id:2, name:"sabanok...", img:"./src/storage/img/avatar2.png"},
-  { id:3, name:"blue_bouy", img:"./src/storage/img/avatar3.png"},
-  { id:4, name:"waggles", img:"./src/storage/img/avatar4.png"},
-  { id:5, name:"steve.loves", img:"./src/storage/img/avatar5.png"},
+  { id: 1, name: "Ruffles", img: avatar1 },
+  { id: 2, name: "sabanok...", img: avatar2 },
+  { id: 3, name: "blue_bouy", img: avatar3 },
+  { id: 4, name: "waggles", img: avatar4 },
+  { id: 5, name: "steve.loves", img: avatar5 },
   { id: 6, name: "Juan", img: "https://randomuser.me/api/portraits/men/1.jpg" },
   { id: 7, name: "María", img: "https://randomuser.me/api/portraits/women/2.jpg" },
   { id: 8, name: "Carlos", img: "https://randomuser.me/api/portraits/men/3.jpg" },

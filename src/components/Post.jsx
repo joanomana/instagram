@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { FiHeart, FiMessageCircle, FiSend, FiBookmark } from "react-icons/fi";
 import { BsThreeDots } from "react-icons/bs";
+import avatar7 from "../storage/img/avatar7.png";
+import postImage from "../storage/img/post.png";
+import tagsImage from "../storage/img/tags.svg";
 
 const Post = () => {
   const [likes, setLikes] = useState(100);
@@ -10,7 +13,7 @@ const Post = () => {
       <div className="flex justify-between p-2">
         <div className="flex items-center gap-2 px-1">
           <div className="rounded-full">
-            <img src="./src/storage/img/avatar7.png" alt="foto" class="w-[40px] h-[40px] rounded-full" />
+            <img src={avatar7} alt="foto" class="w-[40px] h-[40px] rounded-full" />
           </div>
           <div class="flex flex-col pt-0">
           <span className="font-bold text-[15px] ">Ruffles</span>
@@ -20,8 +23,8 @@ const Post = () => {
         <div class="pt-2.5 px-5"><BsThreeDots size={20} /></div>
       </div>
       <div className="relative">
-        <img src="./src/storage/img/post.png" alt="post" />
-        <img class="absolute bottom-3 left-3" src="./src/storage/img/tags.svg" alt="tag" />
+        <img src={postImage} alt="post" />
+        <img class="absolute bottom-3 left-3" src={tagsImage} alt="tag" />
       </div>
       <div className="flex justify-between py-3 px-4">
         <div className="flex gap-4">
